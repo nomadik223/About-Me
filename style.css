@@ -1,18 +1,27 @@
+* {
+  background-color: black;
+  font-family: times;
+}
+
 h1 {
   font-family: verdana;
+  color: white;
 }
 
 P {
   color: orange;
   background-color: lightgrey;
+  padding: 10px 5px;
 }
 
 section p.Games {
   color: red;
-  background-color: grey:
+  background-color: grey;
+  padding: 10px 45px;
 }
 
 #Pets {
   color: yellow;
   background-color: darkgrey;
+  padding: 10px 85px;
 }
