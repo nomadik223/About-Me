@@ -15,9 +15,9 @@ var contestantName = prompt('What is your name?');
 console.log('Welcome ' + contestantName + ' to a little Quiz about me, Austin. Please hit enter to continue.');
 
 //Q1
-var answer1 = parseInt(prompt('How old do you think I am? Please answer with digits, not a typed out answer.'));
+var answer1 = prompt('How old do you think I am? Please answer with digits, not a typed out answer.');
 
-if (parseInt(answer1) === 19) {
+if (answer1 === '19') {
   console.log('Correct! I am indeed only 19 years old!');
 } else {
   console.log('Ooh, sorry. That was wrong. I am actually 19.');

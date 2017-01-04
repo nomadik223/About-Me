@@ -1,6 +1,7 @@
 * {
   background-color: black;
   font-family: helvetica;
+  text-align: center;
 }
 
 h1 {
@@ -24,4 +25,25 @@ section p.Games {
   color: yellow;
   background-color: darkgrey;
   padding: 10px 85px;
+}
+
+ul {
+  color: white;
+  padding: 10px 125px;
+}
+
+dl {
+  color: lime;
+  background-color: darkgrey;
+  padding: 10px 125px;
+}
+
+dt {
+  font-size: 20px;
+  background-color: darkgrey;
+}
+
+dd {
+  font-size: 16px;
+  background-color: darkgrey;
 }
