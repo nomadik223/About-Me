@@ -1,5 +1,6 @@
 'use strict';
 
+//Confirmation status
 var EntryAnswer = confirm('ARE YOU READY?');
 
 if (EntryAnswer) {
@@ -8,6 +9,12 @@ if (EntryAnswer) {
   console.log('Disconnecting from server.');
 }
 
+//Name entry
+var contestantName = prompt('What is your name?');
+
+console.log('Welcome ' + contestantName + ' to a little Quiz about me, Austin. Please hit enter to continue.');
+
+//Q1
 var answer1 = prompt('How old do you think I am? Please answer with digits, not a typed out answer.');
 
 if (answer1 == 19) {
@@ -16,6 +23,7 @@ if (answer1 == 19) {
   console.log('Ooh, sorry. That was wrong. I am actually 19.');
 }
 
+//Q2
 var answer2 = prompt('This is a Yes or No question. You may answer with Yes/No or Y/N. Have I had 5 dogs through my life?').toUpperCase();
 
 if (answer2 === 'Y' || answer2 === 'YES') {
@@ -24,6 +32,7 @@ if (answer2 === 'Y' || answer2 === 'YES') {
   console.log('Oh, I\'m sorry! the correct answer was yes!');
 }
 
+//Q3
 var answer3 = prompt('Have I owned any cats?').toUpperCase();
 
 if (answer3 === 'N' || answer3 === 'NO') {
@@ -32,6 +41,7 @@ if (answer3 === 'N' || answer3 === 'NO') {
   console.log('Oh, I\'m sorry! My family has not owned any cats.');
 }
 
+//Q4
 var answer4 = prompt('Do I play a lot of First Person Shooters and Role Playing Games?').toUpperCase();
 
 if (answer4 === 'Y' || answer4 === 'YES') {
@@ -40,6 +50,7 @@ if (answer4 === 'Y' || answer4 === 'YES') {
   console.log('Oh, I\'m sorry! I mostly play games from those Genres.');
 }
 
+//Q5
 var answer5 = prompt('Have I been writing fanfiction for the past year?').toUpperCase();
 
 if (answer5 === 'N' || answer5 === 'NO') {
