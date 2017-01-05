@@ -1,3 +1,4 @@
+//Helps make sure that there is stricter debugging in the code.
 'use strict';
 
 //Variable to keep tally of correct answers.
@@ -15,7 +16,7 @@ if (EntryAnswer) {
 //Name entry
 var contestantName = prompt('What is your name?');
 
-console.log('Welcome ' + contestantName + ' to a little Quiz about me, Austin. Please hit enter to continue.');
+alert('Welcome ' + contestantName + ' to a little Quiz about me, Austin. Please hit enter to continue.');
 
 //Q1
 var answer1 = prompt('How old do you think I am? Please answer with digits, not a typed out answer.');
