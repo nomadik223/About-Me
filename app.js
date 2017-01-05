@@ -102,9 +102,21 @@ if (functionAnswer5(answer5)) {
 }
 
 //6
+
+//declare function
+function functionAnswer6(answer6) {
+  if (answer6 === 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 for(var index = 0; index < 4; index++){
   var answer6 = parseInt(prompt('How many brothers do I have? Please answer with digits, not typed out numbers. Hint: It is less than 8'));
-  if(answer6 === 2){
+
+//call function
+  if (functionAnswer6(answer6)){
     alert('Correct! Ian and Logan!');
     console.log('Question 6 was correct with ' + index + ' wrong guesses.');
     index = 7;
