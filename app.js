@@ -1,19 +1,23 @@
+//Helps make sure that there is stricter debugging in the code.
 'use strict';
+
+//Variable to keep tally of correct answers.
+var correct = 0;
 
 //Confirmation status
 var EntryAnswer = confirm('ARE YOU READY?');
 var correct = 0;
 
 if (EntryAnswer) {
-  console.log('Player 1 has joined the server. Stand by for Match Start.');
+  alert('Player 1 has joined the server. Stand by for Match Start.');
 } else {
-  console.log('Disconnecting from server.');
+  alert('Too bad. Connecting to server.');
 }
 
 //Name entry
 var contestantName = prompt('What is your name?');
 
-console.log('Welcome ' + contestantName + ' to a little Quiz about me, Austin. Please hit enter to continue.');
+alert('Welcome ' + contestantName + ' to a little Quiz about me, Austin. Please hit enter to continue.');
 
 //Q1
 
@@ -29,8 +33,10 @@ function functionAnswer1(answer1) {
 
 if (functionAnswer1(answer1)) {
   console.log('Correct! I am indeed only 19 years old!');
+
 } else {
-  console.log('Ooh, sorry. That was wrong. I am actually 19.');
+  console.log('Question 1 was Incorrect');
+  alert('Ooh, sorry. That was wrong. I am actually 19.');
 }
 
 //Q2
@@ -46,8 +52,10 @@ function functionAnswer2(answer){
 
 if (functionAnswer2(answer2)) {
   console.log('Correct! Jazz, Thumper, Fezzik, Arya and Maou!');
+
 } else {
-  console.log('Oh, I\'m sorry! the correct answer was yes!');
+  alert('Oh, I\'m sorry! the correct answer was yes!');
+  console.log('Question 2 was Incorrect');
 }
 
 //Q3
@@ -63,8 +71,10 @@ function functionAnswer3(answer3) {
 
 if (functionAnswer3(answer3)) {
   console.log('Correct! Cats just don\'t seem to like my family.');
+
 } else {
-  console.log('Oh, I\'m sorry! My family has not owned any cats.');
+  alert('Oh, I\'m sorry! My family has not owned any cats.');
+  console.log('Question 3 was Incorrect');
 }
 
 //Q4
@@ -80,8 +90,10 @@ function functionAnswer4(answer4) {
 
 if (functionAnswer4(answer4)) {
   console.log('Correct! A couple favorites being Payday 2 and the Pokemon games!');
+
 } else {
-  console.log('Oh, I\'m sorry! I mostly play games from those Genres.');
+  alert('Oh, I\'m sorry! I mostly play games from those Genres.');
+  console.log('Question 4 was Incorrect');
 }
 
 //Q5
@@ -97,8 +109,29 @@ function functionAnswer5(answer5) {
 
 if (functionAnswer5(answer5)) {
   console.log('Correct! I have only been writing fanfiction for the past week or so.');
+
 } else {
-  console.log('Oh, I\'m sorry! While I do write Fanfiction, I only recently began, starting before the new year.');
+  alert('Oh, I\'m sorry! While I do write Fanfiction, I only recently began, starting before the new year.');
+  console.log('Question 5 was Incorrect');
+}
+
+for(var index = 0; index < 4; index++){
+  var answer6 = parseInt(prompt('How many brothers do I have? Please answer with digits, not typed out numbers. Hint: It is less than 8'));
+  if(answer6 === 2){
+    alert('Correct! Ian and Logan!');
+    console.log('Question 6 was correct with ' + index + ' wrong guesses.');
+    index = 7;
+    var correctQuestion6 = true;
+    correct++;
+  } else if (answer6 < 2) {
+    alert('Sorry, that was wrong! You guessed too low!');
+  } else if (answer6 > 2) {
+    alert('Sorry, that was wrong! You guessed too high!');
+  }
+}
+if(correctQuestion6 != true){
+  alert('I am sorry, but I have 2 brothers!');
+  console.log('Question 6 was incorrect');
 }
 
 //6
@@ -143,6 +176,7 @@ for(var ind = 0; ind < 5; ind++){
     prompt('Sorry, that was wrong. :(');
   }
 }
+
 
 alert('You guessed ' + An7Array.length + ' correct! Their names were/are Jazz, Thumper, Fezzik, Arya and Maou.');
 
