@@ -1,7 +1,9 @@
 * {
   background-color: black;
+  color: white;
   font-family: helvetica;
   text-align: center;
+  border-radius: 20px;
 }
 
 h1 {
@@ -10,40 +12,38 @@ h1 {
 }
 
 P {
-  color: orange;
-  background-color: lightgrey;
+  background-color: grey;
   padding: 10px 5px;
+  border: 7px solid blue;
 }
 
 section p.Games {
-  color: red;
   background-color: grey;
   padding: 10px 45px;
 }
 
 #Pets {
-  color: yellow;
-  background-color: darkgrey;
+  background-color: grey;
   padding: 10px 85px;
+  border: 7px solid blue;
 }
 
 ul {
-  color: white;
   padding: 10px 125px;
 }
 
 dl {
-  color: lime;
-  background-color: darkgrey;
+  background-color: grey;
   padding: 10px 125px;
+  border: 7px solid blue;
 }
 
 dt {
   font-size: 20px;
-  background-color: darkgrey;
+  background-color: grey;
 }
 
 dd {
   font-size: 16px;
-  background-color: darkgrey;
+  background-color: grey;
 }
