@@ -37,6 +37,7 @@ function functionAnswer1(answer1) {
 if (functionAnswer1(answer1)) {
   console.log('Correct! I am indeed only 19 years old!');
   document.write('<p> Am I 19? ' + contestantName + ' guessed correctly! I am 19.</p>');
+  alert('Correct! I was born on March 24th, 1997, making me 19 years old.');
 } else {
   console.log('Question 1 was Incorrect');
   document.write('<p> Am I 19?' + contestantName + ' guessed incorrectly. I am only 19.</p>');
@@ -55,6 +56,7 @@ function functionAnswer2(answer){
 }
 
 if (functionAnswer2(answer2)) {
+  alert('Indeed! 5 dogs total, often two at a time; Jazz, Thumper, Fezzik, Arya and Maou.');
   console.log('Correct! Jazz, Thumper, Fezzik, Arya and Maou!');
   document.write('<p>Have I had 5 dogs throughout my life so far? ' + contestantName + ' guessed correctly! I have indeed. Their names are Jazz, Thumper, Fezzik, Arya and Maou.</p>');
 } else {
@@ -75,6 +77,7 @@ function functionAnswer3(answer3) {
 }
 
 if (functionAnswer3(answer3)) {
+  alert('Yeah, Cats and my family just don\'t seem to get along.');
   console.log('Correct! Cats just don\'t seem to like my family.');
   document.write('<p>Have I owned any cats? ' + contestantName + ' guessed correctly. Cats seem to hate me, so no.</p>');
 } else {
@@ -95,6 +98,7 @@ function functionAnswer4(answer4) {
 }
 
 if (functionAnswer4(answer4)) {
+  alert('Why yes, yes I do. I play A LOOOOOOOOT of FPS and RPG games.');
   console.log('Correct! A couple favorites being Payday 2 and the Pokemon games!');
   document.write('<p> Do I play a lot of games from the FPS and PRG genres? ' + contestantName + ' guessed I do, and he is absolutely correct. I have literal thousands of hours in to my Pokemon games alone.</p>');
 } else {
@@ -115,6 +119,7 @@ function functionAnswer5(answer5) {
 }
 
 if (functionAnswer5(answer5)) {
+  alert('Indeed! While I have indeed been writing fanfiction, I have only been writing it for a short time, starting just before the new year.');
   console.log('Correct! I have only been writing fanfiction for the past week or so.');
   document.write('<p>Have I been writing fanfiction for the past year? ' + contestantName + ' thought I did not, and he is correct. I have only very recently began writing fanfiction.</p>');
 } else {
